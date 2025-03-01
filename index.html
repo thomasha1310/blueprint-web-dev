@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <script src="index.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -12,28 +13,28 @@
 </head>
 
 <body>
-    <div>
-        <h1>DOG GENERATOR</h1>
+    <div class="header">
+        <div class="logo">
+            <a href="index.html"><img src="wallie.jpeg" height=50></a>
+        </div>
+        <div class="nav-bar">
+            <a class="nav-item" href="index.html">Home</a>
+            <a class="nav-item" href="about.html">About</a>
+            <a class="nav-item" href="contact.html">Contact</a>
+        </div>
+    </div>
+    <div style="width: 80%; margin: auto;">
+        <h1 class="title">DOG GENERATOR</h1>
         <div class="flex">
-            <input class="item" type="text" placeholder="Enter Dog Breed">
+            <input id="search" type="text" placeholder="Enter Dog Breed">
             <div class="button-container">
-                <button id="submit">find dog!</button>
-                <button id="random">random dog!</button>
+                <button id="submit" onclick="getImageByBreed()">find dog!</button>
+                <button id="random" onclick="getImageRandom()">random dog!</button>
             </div>
         </div>
-        <div>
-            <img src="wallie.jpeg" height="300"></img>
-            <div>
-                <h2>ABOUT THE AUTHOR</h2>
-                <ol>
-                    <li>my name is wallie</li>
-                    <li>i am joyce's dog</li>
-                    <li>i'm 9 or 10 years old</li>
-                    <li>i'm looking for fellow dog friends</li>
-                    <li>i forget</li>
-                </ol>
-            </div>
-        </div>
+    </div>
+    <div>
+        <img style="display:block; margin-left: auto; margin-right: auto; margin-bottom: 2rem; width: 80%;" id="dog-image" src="https://images.dog.ceo//breeds//hound-afghan//n02088094_5150.jpg"/>
     </div>
 </body>
 
