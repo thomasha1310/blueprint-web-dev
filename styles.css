@@ -1,5 +1,76 @@
-.about-the-author {
+body {
+    background-color: #EEF0F2;
+}
+
+h1 {
+    font-family: "Raleway", sans-serif;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 75pt;
+    font-weight: 900;
+    color: #011638;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: bold;
+    font-size: 32pt;
+    font-weight: 900;
+    color: #011638;
+    text-align: center;
+}
+
+p {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 14pt;
+    color: #141414;
+}
+
+ol {
+    font-family: "Roboto Condensed";
+    text-align: left;
+    font-size: 14pt;
+    color: #141414;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid green;
+}
+
+.item {
+    border: 1px solid black;
+    padding: 16px;
+    margin: 8px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 30px;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 100px;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0 10px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+}
+
+#submit {
+    width: 200px;
+    background-color: #0D21A1;
+    color: #EEF0F2
+}
+
+#random {
+    width: 200px;
+    background-color: #EEC643;
     color: #011638;
 }

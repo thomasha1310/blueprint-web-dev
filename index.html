@@ -2,25 +2,29 @@
 <html>
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <title>Dog Generator :)</title>
     <link rel="stylesheet" type="text/css" href="./styles.css">
 </head>
 
 <body>
     <div>
-        <h1>✨dog generator✨</h1>
-        <p>🐶</p>
-        <div>
-            <input type="text" placeholder="Enter Dog Breed">
-            <div>
-                <button>find dog!</button>
-                <button>random dog!</button>
+        <h1>DOG GENERATOR</h1>
+        <div class="flex">
+            <input class="item" type="text" placeholder="Enter Dog Breed">
+            <div class="button-container">
+                <button id="submit">find dog!</button>
+                <button id="random">random dog!</button>
             </div>
         </div>
         <div>
             <img src="wallie.jpeg" height="300"></img>
             <div>
-                <p class="about-the-author">about the author</p>
+                <h2>ABOUT THE AUTHOR</h2>
                 <ol>
                     <li>my name is wallie</li>
                     <li>i am joyce's dog</li>
